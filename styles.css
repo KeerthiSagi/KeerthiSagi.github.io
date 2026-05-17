@@ -1,0 +1,393 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #eef2f7;
+  color: #1f2937;
+  line-height: 1.8;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0f172a;
+  z-index: 1000;
+  padding: 0.9rem 0;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+header {
+  background: linear-gradient(135deg, #0f172a, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 9rem 1rem 6rem 1rem;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+  max-width: 1150px;
+  margin: auto;
+  padding: 3rem 1.5rem;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 1.8rem;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 4px;
+  background: #2563eb;
+  left: 0;
+  bottom: -8px;
+  border-radius: 10px;
+}
+
+h3 {
+  color: #111827;
+  margin-bottom: 0.3rem;
+  font-size: 1.3rem;
+}
+
+h4 {
+  color: #6b7280;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* =========================
+   GENERAL CARDS
+========================= */
+
+.info-card,
+.education-card,
+.skill-card,
+.project-card,
+.experience-card {
+  background: white;
+  border-radius: 18px;
+  padding: 1.8rem;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+.info-card:hover,
+.education-card:hover,
+.skill-card:hover,
+.project-card:hover,
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 26px rgba(0,0,0,0.10);
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.info-card p {
+  margin-bottom: 1rem;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-links p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.contact-links i {
+  color: #2563eb;
+  margin-right: 0.7rem;
+  width: 20px;
+}
+
+.contact-links a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-card {
+  margin-bottom: 1.5rem;
+  border-left: 6px solid #2563eb;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.education-date {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience-card {
+  margin-bottom: 2rem;
+  border-left: 6px solid #2563eb;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.experience-date {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  border-top: 5px solid #2563eb;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project-card {
+  margin-bottom: 1.8rem;
+  border-left: 6px solid #10b981;
+}
+
+/* =========================
+   LISTS
+========================= */
+
+.styled-list,
+.experience-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.styled-list li,
+.experience-list li {
+  position: relative;
+  padding-left: 1.8rem;
+  margin-bottom: 1rem;
+  color: #374151;
+  line-height: 1.8;
+}
+
+.styled-list li::before,
+.experience-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #2563eb;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 4rem;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dbe4ee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  nav ul {
+    gap: 0.4rem;
+    padding: 0 1rem;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+    padding: 0.45rem 0.7rem;
+  }
+
+  header {
+    padding-top: 8rem;
+  }
+
+  header h1 {
+    font-size: 2.3rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 2rem 1rem;
+  }
+
+  .experience-header,
+  .education-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-date,
+  .education-date {
+    margin-top: 0.5rem;
+  }
+
+  .info-card,
+  .education-card,
+  .skill-card,
+  .project-card,
+  .experience-card {
+    padding: 1.4rem;
+  }
+
+}
+
+
+.about-card p {
+  font-size: 1.05rem;
+  line-height: 2;
+  color: #374151;
+}
