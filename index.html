@@ -3,115 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Portfolio of Keerthi Varma Sagi, Computer Science graduate student specializing in Data Analytics and Data Science."/>
+  <meta name="description" content="Portfolio of Keerthi Varma Sagi"/>
   <meta name="author" content="Keerthi Varma Sagi"/>
-  <title>Keerthi Varma Sagi - Portfolio</title>
+
+  <title>Keerthi Varma Sagi | Portfolio</title>
 
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      background: #f4f7fb;
-      color: #1f2937;
-      line-height: 1.7;
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #1a365d;
-      z-index: 1000;
-      padding: 0.5rem 0;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin: 0;
-    }
-
-    nav ul li a {
-      color: white;
-      font-weight: 600;
-      text-decoration: none;
-      padding: 0.3rem 0.75rem;
-      border-radius: 6px;
-      transition: background 0.3s ease;
-    }
-
-    nav ul li a:hover {
-      background: rgba(255, 255, 255, 0.2);
-    }
-
-    header {
-      text-align: center;
-      padding: 7rem 1rem 2rem 1rem;
-      background: linear-gradient(to right, #1a365d, #2563eb);
-      color: white;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-    }
-
-    section {
-      background: white;
-      margin-bottom: 2rem;
-      padding: 2rem;
-      border-radius: 14px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
-    h2 {
-      color: #1a365d;
-      margin-bottom: 1rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #1a365d;
-      color: white;
-      margin-top: 2rem;
-    }
-
-    .job-title {
-      font-weight: 600;
-      font-size: 1.1rem;
-    }
-  </style>
 </head>
 
 <body>
@@ -129,22 +29,31 @@
   </nav>
 
   <header>
-    <h1 data-aos="fade-down">Keerthi Varma Sagi</h1>
-    <p data-aos="fade-up">
-      Computer Science Graduate Student | Data Analytics & Data Science Enthusiast
-    </p>
+    <div class="hero-content">
+      <h1 data-aos="fade-down">Keerthi Varma Sagi</h1>
+      <p data-aos="fade-up">
+        Computer Science Graduate Student | Data Analytics & Data Science Enthusiast
+      </p>
+    </div>
   </header>
 
   <main>
 
     <section id="about" data-aos="fade-up">
       <h2>About Me</h2>
+
       <p>
-        Graduate student in Computer Science at Wichita State University with experience in data scraping, data cleaning, analysis, and visualization. Skilled in Python, SQL, Excel, and Power BI for working with large datasets, improving data quality, and supporting analytics and reporting processes. Experienced in building interactive dashboards, organizing research data, and transforming raw information into meaningful insights. Strong interest in Data Analytics and Data Science with a passion for data-driven problem solving and process improvement.
+        Graduate student in Computer Science at Wichita State University with experience in data scraping, data cleaning, analysis, and visualization.
       </p>
+
+      <ul>
+        <li>Skilled in Python, SQL, Excel, and Power BI for analytics and reporting workflows.</li>
+        <li>Experienced in building dashboards, organizing research data, and improving data quality.</li>
+        <li>Passionate about Data Analytics, Data Science, and data-driven problem solving.</li>
+      </ul>
     </section>
 
-    <section id="contact" data-aos="fade-up">
+    <section id="contact" class="contact-links" data-aos="fade-up">
       <h2>Contact Information</h2>
 
       <p><i class="fas fa-map-marker-alt"></i> Wichita, Kansas</p>
@@ -176,257 +85,174 @@
     <section id="education" data-aos="fade-up">
       <h2>Education</h2>
 
-      <ul>
-        <li>
-          <strong>Master of Science in Computer Science</strong> –
-          Wichita State University, Wichita, KS
-          (Jan 2025 – Dec 2026)
-          <br/>
-          GPA: 4.0 / 4.0
-        </li>
+      <div class="education-card">
+        <h3>Wichita State University</h3>
+        <ul>
+          <li>Master of Science in Computer Science</li>
+          <li>Jan 2025 – Dec 2026</li>
+          <li>GPA: 4.0 / 4.0</li>
+        </ul>
+      </div>
 
-        <br/>
-
-        <li>
-          <strong>Bachelor of Technology in Computer Science</strong> –
-          JNTU Hyderabad, India
-          (Nov 2020 – Jun 2024)
-          <br/>
-          GPA: 3.5 / 4.0
-        </li>
-      </ul>
+      <div class="education-card">
+        <h3>JNTU Hyderabad</h3>
+        <ul>
+          <li>Bachelor of Technology in Computer Science</li>
+          <li>Nov 2020 – Jun 2024</li>
+          <li>GPA: 3.5 / 4.0</li>
+        </ul>
+      </div>
     </section>
 
     <section id="experience" data-aos="fade-up">
       <h2>Professional Experience</h2>
 
-      <ul>
+      <div class="experience-block">
+        <h3>Graduate Research Assistant – MIS (FREDS)</h3>
+        <span>Wichita State University | Jan 2026 – Present</span>
 
-        <li>
-          <span class="job-title">
-            Graduate Research Assistant – Management Information Systems (FREDS)
-          </span>
-          <br/>
-          Wichita State University | Jan 2026 – Present
+        <ul>
+          <li>Developed web scraping workflows using Python and Selenium to collect publication data from 11 academic journals.</li>
+          <li>Performed data cleaning, transformation, and standardization using Pandas and NumPy.</li>
+          <li>Built interactive Power BI dashboards for publication analytics and university rankings.</li>
+          <li>Created DAX measures, slicers, bookmarks, and visual reports for analytical reporting.</li>
+          <li>Worked with APIs, SQL, and Power BI for research-focused data analysis tasks.</li>
+        </ul>
+      </div>
 
-          <ul>
-            <li>
-              Developed web scraping workflows using Python and Selenium to collect and organize publication data from 11 academic journals, reducing manual data collection effort and supporting research analytics reporting.
-            </li>
+      <div class="experience-block">
+        <h3>Graduate Assistant – TALS</h3>
+        <span>Wichita State University | Oct 2025 – Dec 2025</span>
 
-            <li>
-              Performed data cleaning, transformation, and standardization using Pandas and NumPy to improve data consistency and quality.
-            </li>
+        <ul>
+          <li>Managed Blackboard course activities and improved accessibility to academic resources.</li>
+          <li>Performed data cleaning, formatting, and validation to maintain accurate datasets.</li>
+          <li>Supported data-related tasks using Excel, Python, SQL, and Power BI.</li>
+          <li>Organized academic and program-related information for reporting and documentation.</li>
+        </ul>
+      </div>
 
-            <li>
-              Built interactive Power BI dashboards for publication analytics, author rankings, and university rankings, enabling faculty and administrators to quickly identify trends and make data-driven decisions.
-            </li>
+      <div class="experience-block">
+        <h3>Data Engineer Intern – ITVersity, Inc.</h3>
+        <span>Hyderabad, India | Jul 2024 – Nov 2024</span>
 
-            <li>
-              Created DAX measures, slicers, bookmarks, and visual reports to support analytical reporting and data visualization.
-            </li>
-
-            <li>
-              Worked with APIs, SQL, and Power BI to support research-focused data analysis and reporting tasks.
-            </li>
-          </ul>
-        </li>
-
-        <br/>
-
-        <li>
-          <span class="job-title">
-            Graduate Assistant – Teaching Apprentice and Pathway Program (TALS)
-          </span>
-          <br/>
-          Wichita State University | Oct 2025 – Dec 2025
-
-          <ul>
-            <li>
-              Managed Blackboard course activities, including uploading materials and supporting course organization, improving accessibility to academic resources for students and faculty.
-            </li>
-
-            <li>
-              Performed data cleaning, formatting, and validation to maintain accurate datasets and records.
-            </li>
-
-            <li>
-              Supported data-related tasks using Excel, Python, SQL, and Power BI to improve data organization, reporting accuracy, and information accessibility.
-            </li>
-
-            <li>
-              Assisted in organizing academic and program-related information using Excel and Power BI, improving reporting accuracy and streamlining documentation processes.
-            </li>
-
-            <li>
-              Coordinated the compilation of program metrics into visual summaries, helping faculty track progress toward goals.
-            </li>
-
-            <li>
-              Collaborated with faculty and staff to streamline administrative and data-management tasks using Excel and MySQL, improving overall data-processing efficiency.
-            </li>
-          </ul>
-        </li>
-
-        <br/>
-
-        <li>
-          <span class="job-title">
-            Data Engineer Intern – ITVersity, Inc.
-          </span>
-          <br/>
-          Hyderabad, India | Jul 2024 – Nov 2024
-
-          <ul>
-            <li>
-              Automated data workflows with Python and pandas to streamline analysis tasks.
-            </li>
-
-            <li>
-              Designed PostgreSQL databases and optimized SQL queries to improve data retrieval efficiency, support reporting tasks, and maintain organized structured datasets.
-            </li>
-
-            <li>
-              Produced technical documentation and coordinated remote analytics projects via MS Teams, ensuring clear communication and on-time delivery of insights.
-            </li>
-          </ul>
-        </li>
-
-      </ul>
+        <ul>
+          <li>Automated data workflows with Python and pandas to streamline analysis tasks.</li>
+          <li>Designed PostgreSQL databases and optimized SQL queries for reporting efficiency.</li>
+          <li>Coordinated remote analytics projects and technical documentation.</li>
+        </ul>
+      </div>
     </section>
 
     <section id="skills" data-aos="fade-up">
       <h2>Skills</h2>
 
-      <ul>
-        <li>
-          <strong>Programming & Data Analysis:</strong>
-          Python, SQL, R Programming, pandas, NumPy
-        </li>
+      <div class="skills-grid">
 
-        <li>
-          <strong>Databases & Tools:</strong>
-          PostgreSQL, MySQL, Power BI, Excel, GitHub, Jupyter Notebook
-        </li>
+        <div class="skill-card">
+          <h3>Programming & Data Analysis</h3>
+          <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>R Programming</li>
+            <li>Pandas & NumPy</li>
+          </ul>
+        </div>
 
-        <li>
-          <strong>Data Analytics:</strong>
-          Data Cleaning, EDA, Statistical Analysis, Data Visualization, Machine Learning, ETL Workflows
-        </li>
+        <div class="skill-card">
+          <h3>Databases & Tools</h3>
+          <ul>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>Power BI</li>
+            <li>Excel</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
 
-        <li>
-          <strong>Professional Skills:</strong>
-          Problem-Solving, Communication, Adaptability, Team Collaboration
-        </li>
-      </ul>
+        <div class="skill-card">
+          <h3>Data Analytics</h3>
+          <ul>
+            <li>Data Cleaning</li>
+            <li>EDA</li>
+            <li>Machine Learning</li>
+            <li>ETL Workflows</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Professional Skills</h3>
+          <ul>
+            <li>Problem Solving</li>
+            <li>Communication</li>
+            <li>Adaptability</li>
+            <li>Team Collaboration</li>
+          </ul>
+        </div>
+
+      </div>
     </section>
 
     <section id="projects" data-aos="fade-up">
       <h2>Projects</h2>
 
-      <ul>
+      <div class="project-card">
+        <h3>Neural Machine Translation using mBART</h3>
 
-        <li>
-          <strong>Neural Machine Translation using mBART</strong>
+        <ul>
+          <li>Developed Neural Machine Translation models using LSTM and mBART.</li>
+          <li>Applied NLP preprocessing, tokenization, and sequence modeling techniques.</li>
+          <li>Evaluated performance using BLEU score, Perplexity, and F1-score metrics.</li>
+        </ul>
+      </div>
 
-          <p>
-            Developed attention-based Neural Machine Translation (NMT) models using LSTM and fine-tuned the mBART transformer model on the WMT’15 English-German dataset.
-          </p>
+      <div class="project-card">
+        <h3>Bank Marketing Prediction</h3>
 
-          <p>
-            Applied NLP preprocessing, tokenization, and sequence modeling techniques to improve translation quality and contextual understanding.
-          </p>
+        <ul>
+          <li>Built a machine learning classification model using XGBoost.</li>
+          <li>Applied SMOTE for class balancing and feature engineering.</li>
+          <li>Evaluated performance using AUROC, recall, precision-recall, and F1-score metrics.</li>
+        </ul>
+      </div>
 
-          <p>
-            Evaluated model performance using BLEU score, Perplexity, and F1-score metrics to measure translation accuracy and effectiveness.
-          </p>
-        </li>
+      <div class="project-card">
+        <h3>Data Warehouse for E-Commerce</h3>
 
-        <br/>
-
-        <li>
-          <strong>Bank Marketing Prediction</strong>
-
-          <p>
-            Built a machine learning classification model using XGBoost to predict customer term deposit subscriptions from banking campaign datasets.
-          </p>
-
-          <p>
-            Applied SMOTE for class balancing and performed feature engineering and preprocessing to improve minority-class prediction performance.
-          </p>
-
-          <p>
-            Evaluated model performance using AUROC, precision-recall, recall, and F1-score metrics to improve predictive accuracy and model reliability.
-          </p>
-        </li>
-
-        <br/>
-
-        <li>
-          <strong>Data Warehouse for E-Commerce</strong>
-
-          <p>
-            Designed and implemented a scalable data warehouse for e-commerce sales and marketing analytics using PostgreSQL and ETL workflows.
-          </p>
-
-          <p>
-            Developed dimensional models and star schema structures to support efficient querying and business reporting.
-          </p>
-
-          <p>
-            Optimized schema design and data processing workflows to improve reporting performance and analytical data accessibility.
-          </p>
-        </li>
-
-      </ul>
+        <ul>
+          <li>Designed and implemented a scalable data warehouse using PostgreSQL and ETL workflows.</li>
+          <li>Developed dimensional models and star schema structures for business reporting.</li>
+          <li>Optimized reporting performance and analytical data accessibility.</li>
+        </ul>
+      </div>
     </section>
 
     <section id="certifications" data-aos="fade-up">
       <h2>Certifications</h2>
 
       <ul>
-
-        <li>
-          Microsoft Power BI Data Analyst Associate (PL-300) Cert Prep – LinkedIn Learning (Feb 2026)
-        </li>
-
-        <li>
-          Data Science Bootcamp – OdinSchool (Sep 2024)
-        </li>
-
-        <li>
-          Learning SQL Programming – LinkedIn Learning (Feb 2025)
-        </li>
-
-        <li>
-          Power BI Data Visualization and Dashboard Techniques – LinkedIn Learning (Jun 2025)
-        </li>
-
-        <li>
-          Data Storytelling Basics – LinkedIn Learning (Jul 2025)
-        </li>
-
-        <li>
-          Agentic AI for Developers – LinkedIn Learning (Mar 2025)
-        </li>
-
-        <li>
-          Career Essentials in GitHub Professional Certificate – GitHub (Apr 2025)
-        </li>
-
+        <li>Microsoft Power BI Data Analyst Associate (PL-300) – LinkedIn Learning</li>
+        <li>Data Science Bootcamp – OdinSchool</li>
+        <li>Learning SQL Programming – LinkedIn Learning</li>
+        <li>Power BI Data Visualization and Dashboard Techniques – LinkedIn Learning</li>
+        <li>Agentic AI for Developers – LinkedIn Learning</li>
+        <li>Career Essentials in GitHub Professional Certificate – GitHub</li>
       </ul>
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2026 Keerthi Varma Sagi. All rights reserved.</p>
+    <p>© 2026 Keerthi Varma Sagi. All rights reserved.</p>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 900,
+      once: true
+    });
   </script>
 
 </body>
